@@ -1,0 +1,17 @@
+name: 'Feature Reference'
+type: module
+core: 8.x
+dependencies:
+  - ds
+  - field
+  - image
+  - juicebox
+  - language
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
+version: 8.x-1.0

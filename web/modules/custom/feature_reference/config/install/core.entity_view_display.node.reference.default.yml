@@ -1,0 +1,84 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.reference.body
+    - field.field.node.reference.field_gallerie_images
+    - field.field.node.reference.field_prestation
+    - field.field.node.reference.field_type_de_client
+    - node.type.reference
+  module:
+    - ds
+    - juicebox
+    - text
+    - user
+id: node.reference.default
+targetEntityType: node
+bundle: reference
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_gallerie_images:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      thumb_style: juicebox_square_thumb
+      caption_source: ''
+      title_source: ''
+      jlib_galleryWidth: 100%
+      jlib_galleryHeight: 450px
+      jlib_backgroundColor: '#222222'
+      jlib_textColor: 'rgba(255,255,255,1)'
+      jlib_thumbFrameColor: 'rgba(255,255,255,.5)'
+      jlib_showOpenButton: true
+      jlib_showExpandButton: true
+      jlib_showThumbsButton: true
+      manual_config: ''
+      incompatible_file_action: show_icon_and_link
+      linkurl_source: ''
+      linkurl_target: _blank
+      custom_parent_classes: ''
+      jlib_useFullscreenExpand: '0'
+      jlib_useThumbDots: false
+      apply_markup_filter: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: juicebox_formatter
+    region: content
+  field_prestation:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type_de_client:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

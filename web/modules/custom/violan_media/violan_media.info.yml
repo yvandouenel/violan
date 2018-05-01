@@ -1,0 +1,6 @@
+name: 'violan Media'
+type: module
+core: 8.x
+dependencies:
+  - image
+version: 8.x-1.0
