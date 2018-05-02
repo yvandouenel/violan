@@ -1,0 +1,99 @@
+body {
+  font-family: 'Noticia Text', serif;
+}
+
+h1 {
+  font-family: 'Bree Serif', serif;
+}
+
+h2 {
+  font-family: 'Bree Serif', serif;
+}
+
+body.page-node-7 {
+  h2.page-header {
+    padding-left: 120px;
+    min-height: 90px;
+    background: url(../images/icone-escabeau.png) no-repeat 0 0;
+    @media (min-width: @screen-md) {
+      padding-right: 200px;
+      font-size: 3em;
+    }
+  }
+}
+
+h3 {
+  font-family: 'Bree Serif', serif;
+  color: @rouge-violan;
+}
+
+h4 {
+  font-family: 'Bree Serif', serif;
+  color: black;
+  font-size: 1.2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.custom {
+  border: 5px solid red;
+  min-height: 20px;
+}
+
+.contour-gris {
+  border: 1px solid @gris-fonce-violan;
+  padding: 20px;
+  position: relative;
+  @media (max-width: @screen-md) {
+    margin-bottom: 20px;
+  }
+  &:before {
+    .glyphicon();
+    content: "\e830";
+    font-size: 1.5em;
+    color: @gris-fonce-violan;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    display: block;
+    border-right: 10px solid white;
+    border-left: 5px solid white;
+    width: 30px;
+    background-color: white;
+    transform: rotate(180deg);
+  }
+}
+
+.icon-mail {
+  padding-left: 60px;
+  min-height: 41px;
+  background: url(../images/icone-contact.png) no-repeat 0 0;
+  margin-left: 20px;
+}
+
+form.contact-message-feedback-form {
+  button#edit-preview {
+    display: none;
+  }
+}
+
+#edit-submit {
+  background-color: @rouge-violan;
+  color: white;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.4em;
+  border: 1px solid @rouge-violan;
+  padding: 4px 20px;
+  margin-top: 15px;
+}
+
+.alert {
+  text-align: center;
+  font-size: 2em;
+  display: table;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+

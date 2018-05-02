@@ -1,0 +1,56 @@
+.under-clients{
+  background-color: @gris-violan;
+  img{
+    margin-bottom: 30px;
+    &.img-col1-home{
+      margin: 0 42px 30px 0;
+    }
+  }
+  h2{
+    color: @bleu-lien-violan;
+    margin-bottom: 30px;
+  }
+}
+.under-footer{
+  @media (min-width: 1600px){
+    background: @gris-fonce-violan url(../images/footer-logo.png) no-repeat 0 10px;
+  }
+  background-color: @gris-fonce-violan;
+  .footer.container {
+    border-top: 0;
+    #block-violan-footer {
+      ul.menu {
+        display: table;
+        margin: 0 auto;
+        li {
+          float: left;
+          a{
+            color: white;
+            &:hover, &.is-active{
+              color: @gris-fonce-violan;
+              background-color: @gris-clair-violan;
+            }
+          }
+        }
+      }
+
+    }
+    #block-adresse{
+      display: table;
+      margin: 0 auto;
+      color:@gris-clair-violan;
+      a{
+        color: white;
+        &:hover{
+          color: black;
+        }
+      }
+    }
+
+  }
+}
+body.path-frontpage{
+  .footer{
+    margin-top: 0;
+  }
+}
